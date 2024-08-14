@@ -3,6 +3,7 @@ import torch.nn as nn
 import math
 import torch.nn.functional as F
 
+
 class BasicTransformer(nn.Module):
     def __init__(self):
         super().__init__()
@@ -10,6 +11,7 @@ class BasicTransformer(nn.Module):
 
     def forward(self, x):
         return x
+
 
 class EncoderTransformer(nn.Module):
     def __init__(self, d_model):
